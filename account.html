@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>PitoySenpai - Account</title>
+</head>
+<body>
+    <script>
+        const currentUser = JSON.parse(sessionStorage.getItem('current_user'));
+        if (!currentUser) {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <div class="main">
+        <div class="form-container" style="text-align: center;">
+            <h2>Account Profile</h2><br>
+            <div style="text-align: left; margin-bottom: 20px; font-family: Arial, sans-serif;">
+                <p style="color: black; margin-bottom: 8px;"><strong>Username:</strong> <span id="accUname"></span></p>
+                <p style="color: black; margin-bottom: 8px;"><strong>First Name:</strong> <span id="accFname"></span></p>
+                <p style="color: black; margin-bottom: 8px;"><strong>Last Name:</strong> <span id="accLname"></span></p>
+            </div>
+            <a href="index.html"><button style="margin-bottom: 10px; background: #38479e;">Back to Home</button></a>
+            <button id="logoutBtn" style="background: #a93226;">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        if (currentUser) {
+            document.getElementById('accUname').textContent = currentUser.uname;
+            document.getElementById('accFname').textContent = currentUser.fname;
+            document.getElementById('accLname').textContent = currentUser.lname;
+        }
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            sessionStorage.removeItem('current_user');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

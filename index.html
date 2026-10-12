@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>PitoySenpai</title>
+</head>
+<body>
+    <script>
+        const currentUser = JSON.parse(sessionStorage.getItem('current_user'));
+        if (!currentUser) {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <img src="pictures/guko.png" class="bg">
+    <header>
+        <div>
+            <div class="logo"><span id="displayUname">tonyooo</span></div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><input type="text" placeholder="search..."></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>PITOYSENPAI</h1>
+    <p>Feel free to browse <:</p>
+    <div class="categories">
+        <nav>
+            <a href="#">All</a>
+            <a href="#">Action</a>
+            <a href="#">Adventure</a>
+            <a href="#">Romance</a>
+            <a href="#">Comedy</a>
+            <a href="#">Drama</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="movie-card">
+            <a href="https://drive.google.com/file/d/1zw4RwMKVYNVVZyVugS93Ahm_LDyQAEJx/view?usp=drive_link" target="_blank">
+            <img src="https://image.tmdb.org/t/p/w185/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg" alt="A Silent Voice Tagalog">
+            <h3>A Silent Voice</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6pA_kGv-cfw0E9p9P82Kthp4px7qXcxy1t8lu-GEkA&s=10" alt="A Silent Voice Tagalog">
+            <h3>Jujutsu Kaisen</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6f0KzI8oBlYwOzUdwdwqhVD2s9mpB1M5WkAPyijSSQ&s=10" alt="A Silent Voice Tagalog">
+            <h3>Your Name</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="A Silent Voice Tagalog">
+            <h3>Attack on Titan</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg" alt="A Silent Voice Tagalog">
+            <h3>OnePiece</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BZmZkZjNhMWMtM2U0Mi00MjdlLTk3NmMtMTMwZjgwOTJmODMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="A Silent Voice Tagalog">
+            <h3>Black Clover</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTM4MmZiNjEtOGY0MC00MGM0LTkxZjEtODUxMmJmZWEwOWU3XkEyXkFqcGc@._V1_.jpg" alt="A Silent Voice Tagalog">
+            <h3>Sakamoto Days</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGU3YzdhMWEtMGRkMC00MzY2LThkOGEtMDFmZDE0NGQxYzFjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="A Silent Voice Tagalog">
+            <h3>Tokyo Revengers</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTQzNDI5OGItZDZkMy00MWQ1LWIwM2YtYzc2YWNhOGJlZWQxXkEyXkFqcGc@._V1_.jpg" alt="A Silent Voice Tagalog">
+            <h3>Wind Breaker</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNjIxOGY4OWUtMGJiNi00OGU4LTllZDAtYWFkMTI2OWEzY2FiXkEyXkFqcGc@._V1_.jpg" alt="A Silent Voice Tagalog">
+            <h3>Kaiju</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-h2AbRZUj6-sS0SnjGdWh-IlkDMYWakXuY5RMfZUUmdRfzyQ2G8OMj-rm&s=10" alt="A Silent Voice Tagalog">
+            <h3>My Hero Academia</h3>
+            </a>
+        </div>
+        <div class="movie-card">
+            <a href="" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQAwpkTd0GA7vph_2KeNhUEOxqlFs3JH3BE89VtI4Dyg&s=10" alt="A Silent Voice Tagalog">
+            <h3>Spy x Family</h3>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        if (currentUser) {
+            document.getElementById('displayUname').textContent = currentUser.uname;
+        }
+    </script>
+</body>
+</html>
