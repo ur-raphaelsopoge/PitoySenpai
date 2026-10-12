@@ -79,3 +79,22 @@ h2 {
 button:hover { 
     background: #38489e;
 }
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 15px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
